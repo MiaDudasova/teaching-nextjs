@@ -3,12 +3,12 @@ import { MessagesList } from './MessagesList'
 
 async function getMessages() {
   const db = createDB()
-  const messages = await db.selectFrom('messages').select('content').execute()
-  return messages
+  const products = await db.selectFrom('products').select('name').execute()
+  return products
 }
 
 export async function StaticMessages() {
-  const messages = await getMessages()
+  const products = await getMessages()
 
-  return <MessagesList messages={messages} />
+  return <MessagesList messages={products} />
 }

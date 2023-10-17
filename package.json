@@ -30,6 +30,7 @@
     "typescript": "5.2.2"
   },
   "devDependencies": {
+    "@faker-js/faker": "^8.2.0",
     "@next/eslint-plugin-next": "^13.4.19",
     "@types/better-sqlite3": "^7.6.4",
     "eslint-config-prettier": "^9.0.0",

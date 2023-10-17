@@ -7,7 +7,7 @@ export function Messages() {
   const [messages, setMessages] = useState(null)
 
   useEffect(() => {
-    fetch('/api/messages')
+    fetch('/api/products')
       .then((res) => res.json())
       .then((data) => setMessages(data))
   }, [])
