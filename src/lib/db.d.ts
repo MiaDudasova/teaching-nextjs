@@ -16,6 +16,7 @@ export interface ProductsReviews {
   productId: number;
   rating: number;
   content: string | null;
+  username: string;
 }
 
 export interface DB {

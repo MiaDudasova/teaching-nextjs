@@ -35,6 +35,7 @@ async function seedDB() {
         productId: createdProduct.id,
         rating: faker.number.int({ min: 1, max: 5 }),
         content: faker.lorem.sentences({ min: 1, max: 5 }),
+        username: faker.internet.userName(),
       })
     }
   }

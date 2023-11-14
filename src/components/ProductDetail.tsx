@@ -29,7 +29,9 @@ export async function ProductDetail({ id }: ProductDetailProps) {
       <div>{product.name}</div>
       <div>
         {reviews.map((pr) => (
-          <div key={pr.id}>{pr.content}</div>
+          <div key={pr.id}>
+            User: {pr.username} <br /> {pr.content}
+          </div>
         ))}
       </div>
     </div>
